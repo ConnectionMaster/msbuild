@@ -135,8 +135,8 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     </comment>
   </data>
   <data name="HelpMessage_3_SwitchesHeader" UESanitized="true" Visibility="Public">
-    <value>Switches:            Note that you can specify switches using both
-                     "-switch" and "/switch".
+    <value>Switches:            Note that you can specify switches using
+                     "-switch", "/switch" and "--switch".
 </value>
     <comment>
       LOCALIZATION: The following should not be localized:
@@ -1172,7 +1172,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     </comment>
   </data>
   <data name="InvalidGraphBuildValue" UESanitized="true" Visibility="Public">
-    <value>MSBUILD : error MSB1057: Graph build value is not valid. {0}</value>
+    <value>MSBUILD : error MSB1057: Graph build value is not valid.</value>
     <comment>
       {StrBegin="MSBUILD : error MSB1057: "}
       UE: This message does not need in-line parameters because the exception takes care of displaying the invalid arg.

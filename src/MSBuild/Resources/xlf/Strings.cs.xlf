@@ -235,10 +235,10 @@ Copyright (C) Microsoft Corporation. Všechna práva vyhrazena.
     </note>
       </trans-unit>
       <trans-unit id="HelpMessage_3_SwitchesHeader">
-        <source>Switches:            Note that you can specify switches using both
-                     "-switch" and "/switch".
+        <source>Switches:            Note that you can specify switches using
+                     "-switch", "/switch" and "--switch".
 </source>
-        <target state="translated">Přepínače:            Přepínače můžete zadat ve tvaru
+        <target state="needs-review-translation">Přepínače:            Přepínače můžete zadat ve tvaru
                      -switch i /switch.
 </target>
         <note>
@@ -963,8 +963,8 @@ Copyright (C) Microsoft Corporation. Všechna práva vyhrazena.
     </note>
       </trans-unit>
       <trans-unit id="InvalidGraphBuildValue">
-        <source>MSBUILD : error MSB1057: Graph build value is not valid. {0}</source>
-        <target state="translated">MSBUILD : error MSB1057: Hodnota sestavení grafu není platná. {0}</target>
+        <source>MSBUILD : error MSB1057: Graph build value is not valid.</source>
+        <target state="new">MSBUILD : error MSB1057: Graph build value is not valid.</target>
         <note>
       {StrBegin="MSBUILD : error MSB1057: "}
       UE: This message does not need in-line parameters because the exception takes care of displaying the invalid arg.

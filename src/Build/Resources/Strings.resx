@@ -1225,7 +1225,7 @@
     <comment>{StrBegin="MSB4091: "}</comment>
   </data>
   <data name="UnexpectedTaskAttribute" xml:space="preserve">
-    <value>MSB4064: The "{0}" parameter is not supported by the "{1}" task. Verify the parameter exists on the task, and it is a settable public instance property.</value>
+    <value>MSB4064: The "{0}" parameter is not supported by the "{1}" task loaded from assembly: {2} from the path: {3}. Verify that the parameter exists on the task, the &lt;UsingTask&gt; points to the correct assembly, and it is a settable public instance property.</value>
     <comment>{StrBegin="MSB4064: "}</comment>
   </data>
   <data name="UnexpectedTaskOutputAttribute" xml:space="preserve">
@@ -1548,8 +1548,8 @@ Utilization:          {0} Average Utilization: {1:###.0}</value>
   <data name="OM_MatchingProjectAlreadyInCollection" xml:space="preserve">
     <value>An equivalent project (a project with the same global properties and tools version) is already present in the project collection, with the path "{0}". To load an equivalent into this project collection, unload this project first.</value>
   </data>
-  <data name="OM_MatchOnMetadataIsRestrictedToOnlyOneReferencedItem" xml:space="preserve">
-    <value>Only one item type may be referenced when removing with MatchOnMetadata.</value>
+  <data name="OM_MatchOnMetadataIsRestrictedToReferencedItems" xml:space="preserve">
+    <value>Only item types may be referenced when removing with MatchOnMetadata.</value>
   </data>
   <data name="OM_ProjectWasNotLoaded" xml:space="preserve">
     <value>The project provided was not loaded in the collection.</value>
@@ -1699,6 +1699,9 @@ Utilization:          {0} Average Utilization: {1:###.0}</value>
   <data name="ProjectImportSkippedMissingFile" xml:space="preserve">
     <value>Project "{0}" was not imported by "{1}" at ({2},{3}), due to the file not existing.</value>
   </data>
+  <data name="ProjectImportSkippedExpressionEvaluatedToEmpty" xml:space="preserve">
+    <value>Project "{0}" was not imported by "{1}" at ({2},{3}), due to the expression evaluating to an empty string.</value>
+  </data>
   <data name="ProjectImported" xml:space="preserve">
     <value>Importing project "{0}" into project "{1}" at ({2},{3}).</value>
   </data>
@@ -1846,10 +1849,10 @@ Utilization:          {0} Average Utilization: {1:###.0}</value>
     <value>A required NuGet assembly was not found. Expected Path: {0}</value>
   </data>
   <data name="StaticGraphConstructionMetrics" xml:space="preserve">
-    <value>"Static graph loaded in {0} seconds: {1} nodes, {2} edges"</value>
+    <value>Static graph loaded in {0} seconds: {1} nodes, {2} edges</value>
   </data>
   <data name="IsolatedContextDoesNotSupportFileSystem" xml:space="preserve">
-    <value>"EvaluationContext objects created with SharingPolicy.Isolated do not support being passed an MSBuildFileSystemBase file system."</value>
+    <value>EvaluationContext objects created with SharingPolicy.Isolated do not support being passed an MSBuildFileSystemBase file system.</value>
   </data>
   <data name="LoadingProjectCachePlugin" xml:space="preserve">
     <value>"Loading the following project cache plugin:
@@ -1875,5 +1878,8 @@ Utilization:          {0} Average Utilization: {1:###.0}</value>
   </data>
   <data name="NoProjectCachePluginFoundInAssembly" xml:space="preserve">
     <value>MSB4270: No project cache plugins found in assembly "{0}". Expected one.</value>
+  </data>
+  <data name="KillingProcessWithPid" xml:space="preserve">
+    <value>Killing process with pid = {0}.</value>
   </data>
 </root>

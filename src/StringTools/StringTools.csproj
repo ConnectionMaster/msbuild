@@ -15,7 +15,12 @@
     <SemanticVersioningV1>true</SemanticVersioningV1>
 
     <AssemblyName>Microsoft.NET.StringTools</AssemblyName>
-    <AssemblyName Condition="'$(TargetFramework)' == 'net35'">Microsoft.NET.StringTools.net35</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net35'">
+    <AssemblyName>Microsoft.NET.StringTools.net35</AssemblyName>
+    <!-- Disable Fx install checks as we're building against jnm2's 3.5 reference assemblies -->
+    <BypassFrameworkInstallChecks>true</BypassFrameworkInstallChecks>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'net35'">
@@ -23,7 +28,7 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="jnm2.ReferenceAssemblies.net35" />
+    <PackageReference Include="jnm2.ReferenceAssemblies.net35" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net35'">
